@@ -1,0 +1,61 @@
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 700ms ease, transform 700ms ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.panel,
+.button,
+.site-menu a,
+.menu-button {
+  transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease, color 180ms ease, border-color 180ms ease;
+}
+
+.panel:hover,
+.panel:focus-within {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 38px rgba(15, 29, 49, 0.08);
+}
+
+.site-menu a:hover,
+.site-menu a:focus-visible,
+.button:hover,
+.button:focus-visible,
+.menu-button:hover,
+.menu-button:focus-visible {
+  transform: translateY(-1px);
+}
+
+.image-placeholder,
+.image-wide,
+.video-placeholder {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-placeholder::after,
+.image-wide::after,
+.video-placeholder::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, transparent 0%, rgba(24, 59, 103, 0.08) 50%, transparent 100%);
+  transform: translateX(-120%);
+}
+
+.panel:hover .image-placeholder::after,
+.panel:hover .image-wide::after,
+.panel:hover .video-placeholder::after {
+  animation: shimmer 1.2s ease;
+}
+
+@keyframes shimmer {
+  to {
+    transform: translateX(120%);
+  }
+}
