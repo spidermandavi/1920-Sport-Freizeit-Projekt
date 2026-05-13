@@ -44,13 +44,21 @@ if ('IntersectionObserver' in window) {
 } else {
   revealElements.forEach((element) => element.classList.add('is-visible'));
 }
-/* EXPANDABLE SPORT PANELS */
+/* EXPANDABLE PANELS */
 
 const expandablePanels = document.querySelectorAll('.expandable-panel');
 
 expandablePanels.forEach((panel) => {
-  const openButton = panel.querySelector('.expand-button');
-  const closeButton = panel.querySelector('.collapse-button');
+
+  const openButton =
+    panel.querySelector('.expand-button') ||
+    panel.querySelector('.arrow-expand-button');
+
+  const closeButton =
+    panel.querySelector('.collapse-button') ||
+    panel.querySelector('.arrow-collapse-button');
+
+  if (!openButton || !closeButton) return;
 
   openButton.addEventListener('click', () => {
 
@@ -67,10 +75,11 @@ expandablePanels.forEach((panel) => {
         behavior: 'smooth',
         block: 'nearest'
       });
-    }, 150);
+    }, 120);
   });
 
   closeButton.addEventListener('click', () => {
     panel.classList.remove('expanded');
   });
+
 });
