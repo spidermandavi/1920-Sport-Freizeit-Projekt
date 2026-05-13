@@ -44,3 +44,33 @@ if ('IntersectionObserver' in window) {
 } else {
   revealElements.forEach((element) => element.classList.add('is-visible'));
 }
+/* EXPANDABLE SPORT PANELS */
+
+const expandablePanels = document.querySelectorAll('.expandable-panel');
+
+expandablePanels.forEach((panel) => {
+  const openButton = panel.querySelector('.expand-button');
+  const closeButton = panel.querySelector('.collapse-button');
+
+  openButton.addEventListener('click', () => {
+
+    expandablePanels.forEach((otherPanel) => {
+      if (otherPanel !== panel) {
+        otherPanel.classList.remove('expanded');
+      }
+    });
+
+    panel.classList.add('expanded');
+
+    setTimeout(() => {
+      panel.scrollIntoView({
+        behavior: 'smooth',
+        block: 'nearest'
+      });
+    }, 150);
+  });
+
+  closeButton.addEventListener('click', () => {
+    panel.classList.remove('expanded');
+  });
+});
