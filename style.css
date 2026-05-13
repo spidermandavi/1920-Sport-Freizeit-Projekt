@@ -534,3 +534,49 @@ h3 {
     grid-column: span 1;
   }
 }
+/* LEISURE ARROW BUTTONS */
+
+.arrow-expand-button,
+.arrow-collapse-button {
+  border: none;
+  background: rgba(255,255,255,0.08);
+  color: #ffffff;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    opacity 0.25s ease;
+}
+
+.arrow-expand-button:hover,
+.arrow-collapse-button:hover {
+  transform: scale(1.08);
+  background: rgba(255,255,255,0.16);
+}
+
+.leisure-panel .panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.leisure-panel .expand-content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition:
+    max-height 0.45s ease,
+    opacity 0.3s ease,
+    margin-top 0.3s ease;
+}
+
+.leisure-panel.expanded .expand-content {
+  max-height: 260px;
+  opacity: 1;
+  margin-top: 1rem;
+}
