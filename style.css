@@ -580,3 +580,71 @@ h3 {
   opacity: 1;
   margin-top: 1rem;
 }
+/* =========================
+   EXPANDABLE PANELS
+========================= */
+
+.expand-content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition:
+    max-height 0.45s ease,
+    opacity 0.3s ease,
+    margin-top 0.3s ease;
+}
+
+.expandable-panel.expanded .expand-content {
+  max-height: 500px;
+  opacity: 1;
+  margin-top: 1rem;
+}
+
+/* =========================
+   SHOW / HIDE BUTTONS
+========================= */
+
+/* default state */
+.collapse-button,
+.arrow-collapse-button {
+  display: none;
+}
+
+/* when expanded */
+.expandable-panel.expanded .expand-button,
+.expandable-panel.expanded .arrow-expand-button {
+  display: none;
+}
+
+.expandable-panel.expanded .collapse-button,
+.expandable-panel.expanded .arrow-collapse-button {
+  display: inline-flex;
+}
+
+/* =========================
+   ARROW BUTTON STYLING
+========================= */
+
+.arrow-expand-button,
+.arrow-collapse-button {
+  background: transparent;
+  border: none;
+  color: #111; /* makes arrows visible */
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.arrow-expand-button:hover,
+.arrow-collapse-button:hover {
+  transform: scale(1.15);
+  opacity: 0.8;
+}
+
+/* optional: darker arrows in dark panels */
+.leisure-panel .arrow-expand-button,
+.leisure-panel .arrow-collapse-button {
+  color: #1f2937;
+}
