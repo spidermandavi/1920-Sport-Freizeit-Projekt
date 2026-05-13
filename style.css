@@ -458,3 +458,79 @@ h3 {
 .nav-card p {
   opacity: 0.8;
 }
+/* EXPANDABLE SPORT PANELS */
+
+.expandable-grid {
+  align-items: start;
+}
+
+.expandable-panel {
+  overflow: hidden;
+  position: relative;
+}
+
+.panel-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.expand-button,
+.collapse-button {
+  align-self: flex-end;
+  border: none;
+  background: rgba(24, 59, 103, 0.08);
+  color: #183b67;
+  padding: 0.7rem 1rem;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    transform 180ms ease,
+    background 180ms ease,
+    color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.expand-button:hover,
+.collapse-button:hover {
+  transform: translateY(-2px);
+  background: #183b67;
+  color: white;
+}
+
+.expand-content {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transform: translateY(-10px);
+  transition:
+    max-height 650ms cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 400ms ease,
+    transform 500ms ease,
+    margin-top 500ms ease;
+  margin-top: 0;
+}
+
+.expandable-panel.expanded .expand-content {
+  max-height: 500px;
+  opacity: 1;
+  transform: translateY(0);
+  margin-top: 1.5rem;
+}
+
+.expand-content p {
+  margin-bottom: 1rem;
+}
+
+.expandable-panel.expanded {
+  grid-column: span 2;
+}
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+  .expandable-panel.expanded {
+    grid-column: span 1;
+  }
+}
