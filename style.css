@@ -392,6 +392,47 @@ h3 {
   text-align: center;
 }
 
+.page-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-top: 56px;
+  padding-top: 28px;
+  border-top: 1px solid rgba(24, 59, 103, 0.12);
+}
+
+.nav-arrow-btn {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--accent);
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 180ms ease;
+  box-shadow: 0 4px 12px rgba(16, 32, 55, 0.06);
+}
+
+.nav-arrow-btn:hover:not(:disabled),
+.nav-arrow-btn:focus-visible {
+  transform: translateY(-2px);
+  background: var(--accent);
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(24, 59, 103, 0.15);
+}
+
+.nav-arrow-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
 @media (max-width: 920px) {
   .two-column,
   .three-column,
@@ -427,6 +468,16 @@ h3 {
   .menu-button {
     width: 44px;
     height: 44px;
+  }
+
+  .page-navigation {
+    gap: 12px;
+  }
+
+  .nav-arrow-btn {
+    width: 44px;
+    height: 44px;
+    font-size: 1rem;
   }
 }
 .bottom-navigation {

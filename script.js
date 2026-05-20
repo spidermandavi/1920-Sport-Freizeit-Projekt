@@ -83,3 +83,47 @@ expandablePanels.forEach((panel) => {
   });
 
 });
+
+/* PAGE NAVIGATION */
+
+const pageSequence = [
+  'index.html',
+  'olympische-spiele.html',
+  'video.html',
+  'quiz.html',
+  'quellen.html'
+];
+
+function setupPageNavigation() {
+  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+  const currentIndex = pageSequence.indexOf(currentPage);
+  
+  if (currentIndex === -1) return;
+  
+  const backBtn = document.getElementById('backBtn');
+  const nextBtn = document.getElementById('nextBtn');
+  
+  if (!backBtn || !nextBtn) return;
+  
+  // Set up back button
+  if (currentIndex > 0) {
+    backBtn.href = pageSequence[currentIndex - 1];
+    backBtn.disabled = false;
+  } else {
+    backBtn.disabled = true;
+  }
+  
+  // Set up next button
+  if (currentIndex < pageSequence.length - 1) {
+    nextBtn.href = pageSequence[currentIndex + 1];
+    nextBtn.disabled = false;
+  } else {
+    nextBtn.disabled = true;
+  }
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', setupPageNavigation);
+} else {
+  setupPageNavigation();
+}
