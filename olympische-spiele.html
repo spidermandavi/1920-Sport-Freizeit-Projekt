@@ -90,16 +90,18 @@
         <!-- MAIN IMAGE -->
         <img src="images/olympic.jpeg" alt="Olympische Spiele Bild" class="panel-image" />
 
-        <!-- TEXT AREA UNDER IMAGE -->
-        <div class="text-area">
-          <textarea placeholder="Schreibe hier deine Notizen zu den Olympischen Spielen..."></textarea>
+        <!-- TEXT DISPLAY AREA (NOT EDITABLE) -->
+<div class="text-area">
+  <div id="yearContent" class="text-display">
+    Wähle ein Jahr, um Inhalte anzuzeigen.
+  </div>
 
-          <div class="year-boxes">
-            <div class="year-box">1920</div>
-            <div class="year-box">1924</div>
-            <div class="year-box">1928</div>
-          </div>
-        </div>
+  <div class="year-boxes">
+    <div class="year-box" data-year="1920">1920</div>
+    <div class="year-box" data-year="1924">1924</div>
+    <div class="year-box" data-year="1928">1928</div>
+  </div>
+</div>
 
         <div class="feature-grid">
           <div class="fact-card">
