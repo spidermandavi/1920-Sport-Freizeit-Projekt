@@ -91,12 +91,16 @@ const contentData = {
   "1928": "Platzhaltertext für 1928 – hier kannst du später Inhalte einfügen."
 };
 
-document.querySelectorAll(".year-box").forEach(box => {
-  box.addEventListener("click", () => {
-    const year = box.dataset.year;
+const yearBoxes = document.querySelectorAll(".year-box");
 
-    if (contentData[year]) {
-      yearContent.textContent = contentData[year];
-    }
+if (yearContent && yearBoxes.length > 0) {
+  yearBoxes.forEach((box) => {
+    box.addEventListener("click", () => {
+      const year = box.dataset.year;
+
+      if (contentData[year]) {
+        yearContent.textContent = contentData[year];
+      }
+    });
   });
-});
+}
