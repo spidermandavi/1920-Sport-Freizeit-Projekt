@@ -88,7 +88,7 @@ const yearContent = document.getElementById("yearContent");
 const contentData = {
   "1920": "Deutschland durfte noch nicht teilnehmen, wegen den Krieg. Die olympischen Spiele von 1920 symbolisierten Frieden. Die USA hat mit 95 Medaillen am besten abgeschnitten. Es gab die Winter- und Sommerspielen.",
   "1924": "Deutschland durfte wieder nicht teilnehmen. Die hatten wegen den Krieg die Schuld, sollten deswegen nicht mitmachen. Die USA hat mit 99 Medaillen wieder am Besten abgeschnitten. Wie in 1920 gab es wieder die Winter- und Sommerspielen.",
-  "1928": "Hier durfte Deutschland zum ersten mal in 16 Jahren am 11-19 Februar in St.Morik (Schweiz) wieder teilnehmen (Winterspielen). Mit 8. Platz waren die zufrieden. In die Sommerspielen aber, August in Amsterdam (Niederlande), haben die sehr gut abgeschnitten. Die have 2. Platz bekommen, nach USA, mit insgesamt 31 Medailen. Das war ein Historischer Moment, da auch viele Frauen Medailen gewonnen haben."
+  "1928": "Hier durfte Deutschland zum ersten mal in 16 Jahren am 11-19 Februar in St.Morik (Schweiz) wieder teilnehmen (Winterspielen). Mit 8. Platz waren die zufrieden. In die Sommerspielen aber, August in Amsterdam (Niederlande), haben die sehr gut abgeschnitten. Die haben 2. Platz bekommen, nach USA, mit insgesamt 31 Medailen. Das war ein Historischer Moment, da auch viele Frauen Medailen gewonnen haben."
 };
 
 const yearBoxes = document.querySelectorAll(".year-box");
