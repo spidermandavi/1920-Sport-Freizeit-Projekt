@@ -83,4 +83,20 @@ expandablePanels.forEach((panel) => {
   });
 
 });
+const yearContent = document.getElementById("yearContent");
 
+const contentData = {
+  "1920": "Platzhaltertext für 1920 – hier kannst du später Inhalte einfügen.",
+  "1924": "Platzhaltertext für 1924 – hier kannst du später Inhalte einfügen.",
+  "1928": "Platzhaltertext für 1928 – hier kannst du später Inhalte einfügen."
+};
+
+document.querySelectorAll(".year-box").forEach(box => {
+  box.addEventListener("click", () => {
+    const year = box.dataset.year;
+
+    if (contentData[year]) {
+      yearContent.textContent = contentData[year];
+    }
+  });
+});
