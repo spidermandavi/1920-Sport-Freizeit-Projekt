@@ -706,3 +706,13 @@ h3 {
   border-radius: 18px;
   margin-bottom: 16px;
 }
+.text-display {
+  width: 100%;
+  min-height: 120px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: #ffffff;
+  color: #18212b;
+  line-height: 1.5;
+}
