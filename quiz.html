@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz · Sport in den 1920er Jahren</title>
+
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="animations.css"/>
+</head>
+<body>
+
+<header class="site-header">
+  <a class="brand" href="index.html">1920er Sport</a>
+
+  <button class="menu-button" id="menuButton" type="button">
+    ☰
+  </button>
+</header>
+
+<nav class="site-menu" id="siteMenu">
+  <a href="index.html">Startseite</a>
+  <a href="index.html#sport">Sport</a>
+  <a href="index.html#frauensport">Frauensport</a>
+  <a href="index.html#olympische-spiele">Olympische Spiele</a>
+  <a href="index.html#freizeitaktivitaeten">Freizeitaktivitäten</a>
+  <a href="index.html#timeline">Timeline</a>
+  <a href="video.html">Erklärvideo</a>
+  <a href="quiz.html">Quiz</a>
+  <a href="quellen.html">Quellen</a>
+</nav>
+
+<main>
+  <section class="section reveal quiz-section">
+
+    <div id="quizStartScreen" class="quiz-screen">
+      <article class="panel quiz-start-card">
+        <p class="section-kicker">Interaktiv</p>
+        <h2>Quiz</h2>
+        <p>Teste dein Wissen über Sport in den 1920er Jahren.</p>
+        <button id="quizStartButton" type="button" class="button button-primary quiz-start-button">
+          Start
+        </button>
+      </article>
+    </div>
+
+    <div id="quizApp" class="quiz-screen" hidden>
+      <button id="quizBackButton" class="quiz-nav-arrow quiz-nav-arrow--back" type="button" aria-label="Vorherige Frage">
+        ‹
+      </button>
+
+      <button id="quizForwardButton" class="quiz-nav-arrow quiz-nav-arrow--forward" type="button" aria-label="Nächste Frage">
+        ›
+      </button>
+
+      <article id="quizCard" class="panel quiz-card">
+        <p id="quizQuestionMeta" class="quiz-question-meta"></p>
+        <h2 id="quizQuestionText" class="quiz-question-title"></h2>
+
+        <div id="quizOptions" class="quiz-options"></div>
+
+        <div class="quiz-actions-row">
+          <button id="quizContinueButton" type="button" class="button button-primary">
+            Weiter
+          </button>
+        </div>
+      </article>
+
+      <button id="quizAbortButton" class="quiz-abort-button" type="button">
+        Quiz beenden
+      </button>
+    </div>
+
+    <div id="quizResultsScreen" class="quiz-screen" hidden>
+      <article class="panel quiz-results-card">
+        <p class="section-kicker">Auswertung</p>
+        <h2>Dein Ergebnis</h2>
+        <p>Hier siehst du deine Punktzahl, Note und eine Übersicht zu jeder Frage.</p>
+
+        <div id="quizResultsSummary" class="quiz-results-summary"></div>
+        <div id="quizResultsList" class="quiz-results-list"></div>
+
+        <div class="quiz-actions-row">
+          <button id="quizRestartButton" type="button" class="button button-primary">
+            Zurück zur Startseite
+          </button>
+        </div>
+      </article>
+    </div>
+
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>Sport in den 1920er Jahren · Schulprojekt</p>
+</footer>
+
+<script src="script.js"></script>
+<script src="quiz.js"></script>
+
+</body>
+</html>
