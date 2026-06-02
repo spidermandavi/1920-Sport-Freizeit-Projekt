@@ -4,135 +4,132 @@ const ANSWER_KEYS = ['a', 'b', 'c', 'd'];
 const allQuestions = [
   {
     id: 1,
-    question: "Welche Sportart war in den 1920er Jahren besonders beliebt?",
+    question: "Wann durfte Deutschland an den Olympischen Spielen teilnehmen?",
     options: {
-      a: "Skateboarden",
-      b: "Fußball",
-      c: "E-Sport",
-      d: "Snowboarden"
+      a: "1920",
+      b: "1924",
+      c: "1928",
+      d: "1932"
     },
-    correct: "b"
+    correct: "c"
   },
 
   {
     id: 2,
-    question: "  ",
+    question: " Was war das Besondere an den Olympischen Spielen 1928? ",
     options: {
-      a: "  ",
-      b: "  ",
-      c: "  ",
-      d: "  "
+      a: " es gab mehr Sportarten ",
+      b: " es durften Frauen und Männer teilnehmen  ",
+      c: " garnichts "
     },
-    correct: "  "
+    correct: " b "
   },
 
   
   {
     id: 3,
-    question: "  ",
+    question: " Die Olympischen Winterspiele fanden wo statt? ",
     options: {
-      a: "  ",
-      b: "  ",
-      c: "  ",
-      d: "  "
+      a: " Italien ",
+      b: " USA ",
+      c: " Schweiz ",
+      d: " Frankreich "
     },
-    correct: "  "
+    correct: " c "
   },
 
   {
     id: 4,
-    question: "  ",
+    question: " Die Olympischen Sommerspiele 1928 fanden wo statt? ",
     options: {
-      a: "  ",
-      b: "  ",
-      c: "  ",
-      d: "  "
+      a: " Kanada ",
+      b: " China ",
+      c: " Australien ",
+      d: " Niederlande "
     },
-    correct: "  "
+    correct: " d "
   },
 
   {
     id: 5,
-    question: "  ",
+    question: " Welches Medium wurde in den 1920er Jahren zu einem Massenmedium? ",
     options: {
-      a: "  ",
-      b: "  ",
-      c: "  ",
-      d: "  "
+      a: " Fernseher ",
+      b: " Kino ",
+      c: " Telefon ",
+      d: " Zeitung "
     },
-    correct: "  "
+    correct: " b "
   },
 
   {
     id: 6,
-    question: "  ",
+    question: " Was war in Großstädten besonders beliebt? ",
     options: {
-      a: "  ",
-      b: "  ",
-      c: "  ",
-      d: "  "
+      a: " Freizeitparks ",
+      b: " Museen ",
+      c: " Jahrmärkte ",
+      d: " Theater, Opern und Revuen "
     },
-    correct: "  "
+    correct: " d "
   },
 
   {
     id: 7,
-    question: "  ",
+    question: " Wie viele Frauen waren in den 1920ern Mitglied in Sportvereinen? ",
     options: {
-      a: "  ",
-      b: "  ",
-      c: "  ",
-      d: "  "
+      a: " ca. 100.000 ",
+      b: " ca. 500.000 ",
+      c: " Über 1 Million ",
+      d: " Über 10 Millionen "
     },
-    correct: "  "
+    correct: " c "
   },
 
   {
     id: 8,
-    question: "  ",
+    question: " Welche Sportarten betrieben viele Frauen in den 1920ern? ",
     options: {
-      a: "  ",
-      b: "  ",
-      c: "  ",
-      d: "  "
+      a: " Fußball und Basketball ",
+      b: " Motorsport, Boxen und Ringen ",
+      c: " Rugby und Eishockey ",
+      d: " Tennis, Leichtathletik und Schwimmen? "
     },
-    correct: "  "
+    correct: " d "
   },
 
   {
     id: 9,
-    question: "  ",
+    question: " Welche Sportart blieb für Frauen meist verboten? ",
     options: {
-      a: "  ",
-      b: "  ",
-      c: "  ",
-      d: "  "
+      a: " Fußball ",
+      b: " Turnen ",
+      c: " Gymnastik ",
+      d: " Leichtathletik "
     },
-    correct: "  "
+    correct: " a "
   },
 
   {
     id: 10,
-    question: "  ",
+    question: " Wieso wurde Sport so beliebt? ",
     options: {
-      a: "  ",
-      b: "  ",
-      c: "  ",
-      d: "  "
+      a: " wegen den Olympischen Spielen ",
+      b: " wegen der neu eingeführten acht Stunden Woche ",
+      c: " weil die Menschen Muskeln aufbauen wollten "
     },
-    correct: "  "
+    correct: " a "
   },
 
   {
     id: 11,
-    question: "  ",
+    question: " Was war einer der beliebtesten Sportarten bei Männer? ",
     options: {
-      a: "  ",
-      b: "  ",
-      c: "  ",
-      d: "  "
+      a: " Fußball ",
+      b: " Rennsport ",
+      c: " Laufen "
     },
-    correct: "  "
+    correct: " a "
   },
 
   {
