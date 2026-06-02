@@ -88,7 +88,7 @@ const yearContent = document.getElementById("yearContent");
 const contentData = {
   "1920": "Aufgrund der Rolle Deutschlands im ersten Weltkrieg wurde Deutschland 1920/1924 von den Olympischen Speielen ausgeschlossen. Die Olympischen Spielen von 1920 symbolisierten Frieden. Die USA hat mit 95 Medaillen am Besten abgeschnitten. Es wurde generell zwischen die Winter- und Sommerspielen unterschieden.",
   "1924": "Deutschland durfte wieder nicht teilnehmen. Die USA hat mit 99 Medaillen wieder am Besten abgeschnitten.",
-  "1928": "Hier durfte Deutschland zum ersten Mal nach 16 Jahren wieder an den Olympischen Spielen teilnehmen. Die Winterspiele fanden vom 11. bis zum 19. Februar in St. Moritz (Schweiz) statt. Deutschland errreichte in St. Moritz den 8. Platz. Die Sommerspiele fanden vom 28. Juli bis zum 12. August in Amsterdam (Niederlande) statt. Deutschland stand im Medaillenspiegel auf dem 2. Platz, mit insgesamt 31 Medaillen. Die Olympischen Spiele 1928 waren ein historischer Moment, da Frauen teilnehmen durften und auch viele Medaillen gewonnen haben. "
+  "1928": "Hier durfte Deutschland zum ersten Mal nach 16 Jahren wieder an den Olympischen Spielen teilnehmen. Die Winterspiele fanden vom 11. bis zum 19. Februar in St. Moritz (Schweiz) statt. Deutschland errreichte in St. Moritz den 8. Platz. Die Sommerspiele fanden vom 28. Juli bis zum 12. August in Amsterdam (Niederlande) statt. Deutschland stand im Medaillenspiegel auf dem 2. Platz, mit insgesamt 31 Medaillen. Die Olympischen Spiele 1928 waren ein historischer Moment, da Frauen teilnehmen durften und auch viele Medaillen gewonnen haben."
 };
 
 const yearBoxes = document.querySelectorAll(".year-box");
