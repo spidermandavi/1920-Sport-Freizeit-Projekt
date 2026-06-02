@@ -20,7 +20,8 @@ const allQuestions = [
     options: {
       a: "es gab mehr Sportarten",
       b: " es durften Frauen und Männer teilnehmen  ",
-      c: " garnichts "
+      c: " garnichts ",
+      d: "es gab mehr Medaillen"
     },
     correct: "b"
   },
@@ -35,7 +36,7 @@ const allQuestions = [
       c: " Schweiz ",
       d: " Frankreich "
     },
-    correct: " c "
+    correct: "c"
   },
 
   {
@@ -47,7 +48,7 @@ const allQuestions = [
       c: " Australien ",
       d: " Niederlande "
     },
-    correct: " d "
+    correct: "d"
   },
 
   {
@@ -59,7 +60,7 @@ const allQuestions = [
       c: " Telefon ",
       d: " Zeitung "
     },
-    correct: " b "
+    correct: "b"
   },
 
   {
@@ -71,7 +72,7 @@ const allQuestions = [
       c: " Jahrmärkte ",
       d: " Theater, Opern und Revuen "
     },
-    correct: " d "
+    correct: "d"
   },
 
   {
@@ -83,7 +84,7 @@ const allQuestions = [
       c: " Über 1 Million ",
       d: " Über 10 Millionen "
     },
-    correct: " c "
+    correct: "c"
   },
 
   {
@@ -95,7 +96,7 @@ const allQuestions = [
       c: " Rugby und Eishockey ",
       d: " Tennis, Leichtathletik und Schwimmen "
     },
-    correct: " d "
+    correct: "d"
   },
 
   {
@@ -107,7 +108,7 @@ const allQuestions = [
       c: " Gymnastik ",
       d: " Leichtathletik "
     },
-    correct: " a "
+    correct: "a"
   },
 
   {
@@ -116,9 +117,10 @@ const allQuestions = [
     options: {
       a: " wegen den Olympischen Spielen ",
       b: " wegen der neu eingeführten acht Stunden Woche ",
-      c: " weil die Menschen Muskeln aufbauen wollten "
+      c: " weil die Menschen Muskeln aufbauen wollten ",
+      d: " weil Bentley und Bugatti viel Werbung damals machten"
     },
-    correct: " a "
+    correct: "a"
   },
 
   {
@@ -127,9 +129,10 @@ const allQuestions = [
     options: {
       a: " Fußball ",
       b: " Rennsport ",
-      c: " Laufen "
+      c: " Laufen ",
+      d: " Ringen "
     },
-    correct: " a "
+    correct: "a"
   },
 
   {
@@ -141,7 +144,7 @@ const allQuestions = [
       c: " 457 ",
       d: " 315 "
     },
-    correct: " b "
+    correct: "b"
   },
 
   {
@@ -153,7 +156,7 @@ const allQuestions = [
       c: " ~65 ",
       d: " ~60 "
     },
-    correct: " d "
+    correct: "d"
   },
 
   {
@@ -165,7 +168,7 @@ const allQuestions = [
       c: " Blues ",
       d: " Damals hat man meistens nur gesungen, manchmal auch mit Piano begleitung. "
     },
-    correct: " b "
+    correct: "b"
   },
 
   {
@@ -177,7 +180,7 @@ const allQuestions = [
       c: " Stummfilme ",
       d: " Es gab noch keine Filme, es waren Schauspiele. "
     },
-    correct: " c "
+    correct: "c"
   }
 
   // weitere Fragen hier...
