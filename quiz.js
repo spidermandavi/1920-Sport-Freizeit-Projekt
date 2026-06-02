@@ -134,50 +134,50 @@ const allQuestions = [
 
   {
     id: 12,
-    question: "  ",
+    question: " Wie viele Millionen Zuschauer haben Kinos im Jahr 1926 bekommen? ",
     options: {
-      a: "  ",
-      b: "  ",
-      c: "  ",
-      d: "  "
+      a: " 167 ",
+      b: " 332 ",
+      c: " 457 ",
+      d: " 315 "
     },
-    correct: "  "
+    correct: " b "
   },
 
   {
     id: 13,
-    question: "  ",
+    question: " Wie schnell wurden die Autos (Meilen)? ",
     options: {
-      a: "  ",
-      b: "  ",
-      c: "  ",
-      d: "  "
+      a: " ~97 ",
+      b: " ~88 ",
+      c: " ~65 ",
+      d: " ~60 "
     },
-    correct: "  "
+    correct: " d "
   },
 
   {
     id: 14,
-    question: "  ",
+    question: " Was war die bekannsteste Art von Musik in den 1920er? ",
     options: {
-      a: "  ",
-      b: "  ",
-      c: "  ",
-      d: "  "
+      a: " Klassiker ",
+      b: " Jazz ",
+      c: " Blues ",
+      d: " Damals hat man meistens nur gesungen, manchmal auch mit Piano begleitung. "
     },
-    correct: "  "
+    correct: " b "
   },
 
   {
     id: 15,
-    question: "  ",
+    question: " Was für Filme gab es? ",
     options: {
-      a: "  ",
-      b: "  ",
-      c: "  ",
-      d: "  "
+      a: " Farbige Filme ",
+      b: " Schwarz-Weiß mit Ton ",
+      c: " Stummfilme ",
+      d: " Es gab noch keine Filme, es waren Schauspiele. "
     },
-    correct: "  "
+    correct: " c "
   }
 
   // weitere Fragen hier...
