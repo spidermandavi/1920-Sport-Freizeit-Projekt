@@ -18,11 +18,11 @@ const allQuestions = [
     id: 2,
     question: " Was war das Besondere an den Olympischen Spielen 1928? ",
     options: {
-      a: " es gab mehr Sportarten ",
+      a: "es gab mehr Sportarten",
       b: " es durften Frauen und Männer teilnehmen  ",
       c: " garnichts "
     },
-    correct: " b "
+    correct: "b"
   },
 
   
@@ -93,7 +93,7 @@ const allQuestions = [
       a: " Fußball und Basketball ",
       b: " Motorsport, Boxen und Ringen ",
       c: " Rugby und Eishockey ",
-      d: " Tennis, Leichtathletik und Schwimmen? "
+      d: " Tennis, Leichtathletik und Schwimmen "
     },
     correct: " d "
   },
