@@ -1,27 +1,192 @@
 const QUIZ_SIZE = 15;
 const ANSWER_KEYS = ['a', 'b', 'c', 'd'];
 
-const allQuestions = Array.from({ length: 20 }, (_, index) => {
-  const i = index + 1;
-  const correctPattern = [
-    'b', 'c', 'a', 'd', 'b',
-    'a', 'c', 'd', 'b', 'a',
-    'c', 'd', 'b', 'c', 'a',
-    'd', 'b', 'a', 'c', 'd',
-  ];
-
-  return {
-    id: i,
-    question: `Platzhalterfrage ${i}: Bitte ersetze diese Frage später durch deine echte Quizfrage.`,
+const allQuestions = [
+  {
+    id: 1,
+    question: "Welche Sportart war in den 1920er Jahren besonders beliebt?",
     options: {
-      a: `Platzhalter-Antwort A${i}`,
-      b: `Platzhalter-Antwort B${i}`,
-      c: `Platzhalter-Antwort C${i}`,
-      d: `Platzhalter-Antwort D${i}`,
+      a: "Skateboarden",
+      b: "Fußball",
+      c: "E-Sport",
+      d: "Snowboarden"
     },
-    correct: correctPattern[index],
-  };
-});
+    correct: "b"
+  },
+
+  {
+    id: 2,
+    question: "  ",
+    options: {
+      a: "  ",
+      b: "  ",
+      c: "  ",
+      d: "  "
+    },
+    correct: "  "
+  },
+
+  
+  {
+    id: 3,
+    question: "  ",
+    options: {
+      a: "  ",
+      b: "  ",
+      c: "  ",
+      d: "  "
+    },
+    correct: "  "
+  },
+
+  {
+    id: 4,
+    question: "  ",
+    options: {
+      a: "  ",
+      b: "  ",
+      c: "  ",
+      d: "  "
+    },
+    correct: "  "
+  },
+
+  {
+    id: 5,
+    question: "  ",
+    options: {
+      a: "  ",
+      b: "  ",
+      c: "  ",
+      d: "  "
+    },
+    correct: "  "
+  },
+
+  {
+    id: 6,
+    question: "  ",
+    options: {
+      a: "  ",
+      b: "  ",
+      c: "  ",
+      d: "  "
+    },
+    correct: "  "
+  },
+
+  {
+    id: 7,
+    question: "  ",
+    options: {
+      a: "  ",
+      b: "  ",
+      c: "  ",
+      d: "  "
+    },
+    correct: "  "
+  },
+
+  {
+    id: 8,
+    question: "  ",
+    options: {
+      a: "  ",
+      b: "  ",
+      c: "  ",
+      d: "  "
+    },
+    correct: "  "
+  },
+
+  {
+    id: 9,
+    question: "  ",
+    options: {
+      a: "  ",
+      b: "  ",
+      c: "  ",
+      d: "  "
+    },
+    correct: "  "
+  },
+
+  {
+    id: 10,
+    question: "  ",
+    options: {
+      a: "  ",
+      b: "  ",
+      c: "  ",
+      d: "  "
+    },
+    correct: "  "
+  },
+
+  {
+    id: 11,
+    question: "  ",
+    options: {
+      a: "  ",
+      b: "  ",
+      c: "  ",
+      d: "  "
+    },
+    correct: "  "
+  },
+
+  {
+    id: 12,
+    question: "  ",
+    options: {
+      a: "  ",
+      b: "  ",
+      c: "  ",
+      d: "  "
+    },
+    correct: "  "
+  },
+
+  {
+    id: 13,
+    question: "  ",
+    options: {
+      a: "  ",
+      b: "  ",
+      c: "  ",
+      d: "  "
+    },
+    correct: "  "
+  },
+
+  {
+    id: 14,
+    question: "  ",
+    options: {
+      a: "  ",
+      b: "  ",
+      c: "  ",
+      d: "  "
+    },
+    correct: "  "
+  },
+
+  {
+    id: 15,
+    question: "  ",
+    options: {
+      a: "  ",
+      b: "  ",
+      c: "  ",
+      d: "  "
+    },
+    correct: "  "
+  }
+
+  // weitere Fragen hier...
+];
+
+
 
 const state = {
   questions: [],
